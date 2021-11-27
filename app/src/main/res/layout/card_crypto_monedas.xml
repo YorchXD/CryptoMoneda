@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_book"
+    android:layout_margin="12dp"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="6dp"
+    card_view:contentPadding="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            card_view:srcCompat="@drawable/ic_baseline_monetization_on_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/name_moneda"
+            android:textColor="@color/primary_text"
+            android:id="@+id/item_name_moneda"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/item_icon"
+            android:layout_toRightOf="@+id/item_icon"
+            android:layout_alignParentTop="true"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/symbol_moneda"
+            android:textColor="@color/primary_text"
+            android:id="@+id/item_symbol"
+            android:layout_toEndOf="@+id/item_icon"
+            android:layout_toRightOf="@+id/item_icon"
+            android:layout_below="@+id/item_name_moneda"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
